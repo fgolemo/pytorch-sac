@@ -208,7 +208,7 @@ for i_episode in itertools.count(1):
 
         if exp is not None:
             exp.log_metric("reward", avg_reward)
-            exp.log_metric("frame", i_episode)
+            exp.log_metric("frame", total_numsteps)
 
         print("----------------------------------------")
         print("Test Episodes: {}, Avg. Reward: {}".format(
